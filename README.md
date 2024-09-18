@@ -27,6 +27,14 @@ export ALIBABA_CLOUD_USERID='******'
 export ALIBABA_CLOUD_ACCESS_KEY_ID='******'
 export ALIBABA_CLOUD_ACCESS_KEY_SECRET='******'
 ```
+（1）ALIBABA_CLOUD_USERID为主账号ID
+
+（2）ALIBABA_CLOUD_ACCESS_KEY_ID & ALIBABA_CLOUD_ACCESS_KEY_SECRET有两种模式，分别为主账号AK&SK 或者子账号AK&SK，如果是子账号，那么子账号需要具备如下的权限
+```
+AliyunARMSFullAccess
+AliyunSAEFullAccess
+AliyunTagAdministratorAccess
+```
 
 ## 1.3 运行程序
 run SAETagsTool main
