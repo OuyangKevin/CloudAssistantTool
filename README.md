@@ -1,6 +1,6 @@
 Cloud Assistant Tool,please use JDK 11+
 
-# 1. 对SAE应用进行批量打标
+# 1. 对SAE&ARMS应用进行批量打标
 ## 1.1 自主维护SAE应用的标签csv文件
 csv的格式严格与下面的设计保持一致
 
@@ -36,7 +36,7 @@ AliyunSAEFullAccess
 AliyunTagAdministratorAccess
 ```
 
-## 1.3 运行程序
+## 1.3 对SAE应用进行批量打标
 run SAETagsTool main
 ```
 SAETagsTool saeTagsTool = new SAETagsTool();
@@ -44,7 +44,7 @@ String csvFile = "/***/***/***.csv";
 saeTagsTool.AddTagsToSae(csvFile,false,"chagee_env","chagee_business","chagee_project");
 ```
 
-## 1.4 进阶-将SAE应用的标同步至ARMS
+## 1.4 进阶-对SAE应用进行批量打标，同时将SAE应用的标同步至ARMS
 ```
 SAETagsTool saeTagsTool = new SAETagsTool();
 String csvFile = "/***/***/***.csv";
